@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+body{
+    background-color: #181719;
+    
+}
+.container {
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:376px) {
+    .container {
+        max-width: 1440px;
+    } 
+    .container {
+        padding: 50px 85px ;
+    }
+}
+@media (max-width:376px) {
+    .container{
+    }
+    header .container {
+        padding: 19px 12px ;
+    }
+    ul li{
+        display: none;
+    }
+}
+.logo {
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid white;
+    width: 102px;
+    height: 32px;
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color :white ;
+    padding: 8px;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    
+}
+ul li {
+        color: white;
+        text-transform: capitalize;
+        font-family:"Montserrat" ;
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 50px;
+        line-height: 21.94px;
+        cursor: pointer;
+}
+ul li :hover {
+    border: 2px solid #FFFFFF;;
+}
+
+main .container {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+}
+@media (max-width:376px) {
+    .container{
+        padding: 19px 12px;
+
+    }
+    main .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+    }
+    main .container p ,h3 {
+        text-align: center;
+        font-size: larger;
+    }
+
+    
+}
+picture img {
+    width: 821.11px;
+    height: 586.53px;
+    background: url(image.png);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+picture ::after {
+    content: '';
+    background-color: #181719;
+    width: 410px;
+    top:0%;
+    left: 0px;
+    height: 189px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+width: 365px;
+height: 61px;
+font-family: 'Lora';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 61px;
+margin-top: 100px;
+margin-bottom: 40px;
+color: #FFFFFF;
+}
+
+p {
+    width: 410px;
+    height: 145px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
