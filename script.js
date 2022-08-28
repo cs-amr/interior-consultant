@@ -1,0 +1,1 @@
+const primaryNav = document.querySelector('i')
