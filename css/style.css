@@ -14,7 +14,7 @@ body{
     padding: 2.6rem 4.8rem; 
 }
 
-@media (max-width:376px) {
+@media (max-width:1080px) {
     .container{
         width: 100%;
         padding: 1.18rem .75rem ;
@@ -76,7 +76,7 @@ visibility: hidden;
     color: #FFFFFF;
     text-transform: uppercase;
     border: 2px solid white;
-    padding: 4px;
+    padding: 8px 4px;
     text-align: center;
 }
 h6 {
@@ -87,9 +87,10 @@ h6 {
     font-size: 18px;
     line-height: 22px;
     cursor: pointer;
+    margin-top: 1rem;
 
 }
-ul{
+header ul{
     list-style: none;
     display: flex;    
     font-family: 'Montserrat';
@@ -99,13 +100,13 @@ ul{
     line-height: 22px;
     cursor: pointer;
 }
-ul li {
+header ul li {
     margin-left: 5rem;
     color: #FFFFFF;
     text-transform: capitalize;
     position: relative;
 }
-ul li:hover:after{
+header ul li:hover:after{
     content: '';
     background-color: #FFFFFF;
     width: 100%;
@@ -142,4 +143,65 @@ main .container {
 main .container picture img {
     width: 100%;
     min-width: 50%;
+}
+picture {
+    position: relative;
+}
+.user-profile {
+    background-color:#181719 ;
+    box-shadow: 0px 15px 25px -4px rgba(0, 0, 0, 0.24);
+    height: 160px;
+    width: 366px;
+    position: absolute;
+    bottom: -75px;
+    right: 20px;
+    padding: 23px 0 34px 26px;
+}
+.circle {
+    width: 15%;
+    aspect-ratio: 1/1;
+    background-image: url('../imgs/photo2.png');
+    background-size: contain;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+@media (max-width:1080) {
+    .data-user {
+        display: flex;
+        gap: 5%;
+        font-family: 'open sans';
+        color: white;
+        margin-bottom: .8rem;
+    }
+    .data-user li:last-child {
+        color: #6f6f6f;
+    }
+    .user-profile p {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+    
+}
+.data-user {
+    display: flex;
+    gap: 5%;
+    font-family: open sans;
+    color: white;
+    margin-bottom: .8rem;
+}
+.data-user li:last-child {
+    color: #6f6f6f;
+}
+.user-profile p {
+    font-size: 1.4rem;
+    width: 70%;
+}
+.data-user ul {
+    list-style: none;
+}
+.data-user ul li {
+    font-size: 1rem;
 }
